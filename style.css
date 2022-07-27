@@ -41,6 +41,7 @@
     border: 2px solid darkseagreen;
     border-radius: 20px;
     color: white;
+    font-weight: bold;
     padding: 15px 20px;
     outline: none;
     transition: all .4s;
@@ -49,7 +50,8 @@
 }
 
 .container .nav ul li a:hover{
-    color: darkslategray;   
+    color: darkslategray;
+    background-color: aliceblue;
 }
 
 .container .hero {
@@ -102,9 +104,25 @@
     align-items: center;
 }
 
-.container .text ul li{
-    display: inline-block;
-    margin: 105px 293px;
+.container .text_1 ul li{
+    list-style: none;
+    margin: 200px;
+    color: white;
+    width: 130px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 29px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #9CB4CC;
+    color: white;
+    opacity: 0.85;
+}
+
+.container .text_2 ul li{
+    list-style: none;
+    margin: 200px;
     color: white;
     width: 130px;
     height: 100px;
@@ -163,4 +181,24 @@
 .contact li {
     display: inline-block;
     margin: 0 52px;
+}
+
+#dynamic {
+    position: relative;
+    display: inline-block;
+}
+
+#dynamic::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+}
+
+#dynamic.active::after{
+    display: none;
 }

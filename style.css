@@ -73,7 +73,7 @@ a {
     font-size: 20px;
 }
 
-.container .hero {
+.hero {
     position: absolute;
     width: 650px;
     left: 50%;
@@ -82,16 +82,15 @@ a {
     color: white;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
 }
 
-.container .hero h2{
-    font-size: 80px;
+.hero h1{
     margin: 0;
 }
 
-.container .hero p:first-child{
+.hero p:first-child{
     margin-bottom: 0;
-    font-size: 40px;
 }
 
 .mbti {
@@ -163,7 +162,6 @@ a {
 .hero #dynamic {
     position: relative;
     display: inline-block;
-    font-size: 35px;
 }
 
 .hero #dynamic::after {
@@ -221,8 +219,13 @@ a {
     }
 
     #favorite__video iframe {
-        width: 560px;
-        height: 315px;
+        width: 426px;
+        height: 240px;
+    }
+
+    .hero,
+    #dynamic {
+        font-size: 20px;
     }
 }
 
